@@ -1,0 +1,914 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    
+    font-family: 'Roboto', sans-serif !important;
+}
+a,a:hover{
+  text-decoration:none;
+  color: #000;
+}
+a:hover{
+  color:  rgb(242,139,30);
+}
+
+p { font-weight:400; 
+
+}
+
+h1, h2, h3, h4 { font-weight: 700;
+font-family: 'Domine', serif!important;
+ }
+
+h2 { font-size: 40px; }
+
+h2::after {
+  content: ""; display: block;
+  height: 6px;
+  background: linear-gradient(45deg, rgb(255,83,31), rgb(242,139,30));
+  width: 85px;
+  margin: 10px auto;
+}
+
+h3 { font-size: 36px; }
+
+h4 { font-size: 30px; }
+
+.hide2 { padding-top: 200px; }
+
+#discover h3, #welcome h3, #trainings h3,
+#microsoft-partner h4, #testimonials h2,
+ #welcome h2, #welcome h4,#contact-page h3,
+#training-microsoft-page h2,#training-course h2,
+#manage-services h2,#manage-services h3,
+.card-title, #tranining-course h2,.carousel-caption h3{
+color:#363636;
+}
+figcaption h3 span{
+  color: #fff;
+}
+/* Sections CSS*/
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/*-- Top Header --*/
+
+#top-header span { font-size: 14px; }
+#top-header .fab { font-size: 16px; margin-right: 10px; }
+
+/*-- Navigation --*/
+.navbar { margin-top: 55px; font-weight: 700; }
+
+.navbar-light .navbar-nav .nav-link { 
+  color:#fff; 
+
+  }
+
+.navbar-light .navbar-nav .active>.nav-link { 
+  color: #f26c13;
+  }
+.navbar-light .navbar-nav .nav-link:hover { color: #f26c13; }
+
+.navbar-light .navbar-nav .show>.nav-link { color: #fff; }
+
+.navigation-clean {
+    color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+}
+
+
+.navigation-clean .navbar-brand img {
+  height: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  width: auto;
+}
+
+.navigation-clean .navbar-toggler {
+  border-color: #ddd;
+}
+
+.navigation-clean .navbar-toggler:hover, .navigation-clean .navbar-toggler:focus {
+  background: none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navigation-clean .navbar-nav > .active > a, .navigation-clean .navbar-nav > .show > a {
+  background: none;
+  box-shadow: none;
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link.active, .navigation-clean.navbar-light .navbar-nav .nav-link.active:focus, .navigation-clean.navbar-light .navbar-nav .nav-link.active:hover {
+  color: #8f8f8f;
+  box-shadow: none;
+  background: none;
+  pointer-events: none;
+}
+
+.navigation-clean.navbar .navbar-nav .nav-link {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link {
+  color: rgb(255,255,255);
+}
+
+.navigation-clean.navbar-light .navbar-nav .nav-link:focus, .navigation-clean.navbar-light .navbar-nav .nav-link:hover {
+  color: #37434d !important;
+  background-color: transparent;
+}
+
+.navigation-clean .navbar-nav > li > .dropdown-menu {
+  margin-top: -5px;
+  box-shadow: none;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item {
+  line-height: 2;
+  color: #37434d;
+}
+
+.navigation-clean .dropdown-menu .dropdown-item:focus, .navigation-clean .dropdown-menu .dropdown-item:hover {
+  background: #eee;
+  color: inherit;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+  color:  #f26c13;
+}
+
+
+.container .dropdown .dropdown-menu a:hover
+{
+  color: #fff;
+  background-color: #f26c13;
+}
+#upper-nav-icons i {
+  margin-right: 10px;
+}
+
+.navbar.navbar-light.navbar-expand-md.navigation-clean {
+ font-weight: 700;
+}
+
+#upper-nav-icons {
+  height: 20px;
+  margin: 5px 0px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(242, 108, 19, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler-icon {
+  border-color: rgba(242, 108, 19, 1);
+} 
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  margin-top: 0px;
+  padding-top:10px;
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #afafaf;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #f26c13;
+  text-decoration: none;
+}
+
+
+
+/*-- Hero Header Image--*/
+#hero-img {
+background-image: url(../img/hero-img01.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-position: 70% 90%; 
+color: #fff;
+padding:160px 0px 60px 0px;
+height: 600px;
+position: relative;
+font-weight:700;
+}
+
+#hero-img h1 { font-size:70px; }
+
+#hero-img .subheading { font-size:22px; }
+
+.enrol { 
+  background: #f26c13; 
+  border-radius:50px; 
+  border: solid 2px #fff; 
+  padding: 10px 45px; 
+  text-transform: uppercase; 
+  font-weight: 700;
+}
+
+.enrol:hover {
+    color: #fff;
+    background: #f26c13; 
+    border: solid 2px #f7883e; 
+}
+/*-- Colored Boxes --*/
+
+#box h4 { 
+          font-size:1.5rem; 
+          margin-bottom:15px; 
+          text-transform: uppercase;
+        }
+        
+#box p  { font-size:0.875rem; }
+
+.orange-box { 
+  background-image: url(../img/orange-box.jpg);
+  background-repeat: no-repeat;
+  
+}
+
+.yellow-box { 
+  background-image: url(../img/yellow-box.jpg);
+  background-repeat: no-repeat;
+  
+
+}
+
+.green-box { 
+  background-image: url(../img/green-box.jpg);
+  background-repeat: no-repeat;
+  
+
+}
+
+.gray-box { 
+  background-image: url(../img/gray-box.jpg);
+  background-repeat: no-repeat;
+  
+
+}
+
+/*Trainigs CSS*/
+#trainings{
+  background-image: url(../img/training-bg.png);
+  background-size: cover;
+ background-repeat: no-repeat;
+ 
+}
+/*hover effect training CSS*/
+.effect-julia {
+	background: #5678bb;
+}
+
+.effect-julia img {
+	transition: opacity 1s, transform 1s;
+	backface-visibility: hidden;
+}
+
+.effect-julia figcaption {
+	text-align: left;
+}
+
+.effect-julia h2 {
+  position: relative;
+}
+
+.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(-360px,0,0);
+}
+
+.effect-julia p:first-child {
+	transition-delay: 0.15s;
+}
+
+.effect-julia p:nth-of-type(2) {
+	transition-delay: 0.1s;
+}
+
+.effect-julia p:nth-of-type(3) {
+	transition-delay: 0.05s;
+}
+
+.effect-julia:hover p:first-child {
+	transition-delay: 0s;
+}
+
+.effect-julia:hover p:nth-of-type(2) {
+	transition-delay: 0.05s;
+}
+
+.effect-julia:hover p:nth-of-type(3) {
+	transition-delay: 0.1s;
+}
+
+.effect-julia:hover img {
+	opacity: 0.4;
+	transform: scale3d(1.1,1.1,1);
+}
+
+.effect-julia:hover p {
+	opacity: 1;
+	transform: translate3d(0,0,0);
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	min-width: 220px;
+	max-width: 480px;
+	max-height: 360px;
+	height: auto;
+	background: #000000;
+	text-align: center;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 100%;
+}
+.grid figure figcaption p { 
+  background-color:  #f7883e; 
+  color:#fff; 
+  padding-left: 5px;
+  padding-right: 5px;  
+  }
+.grid figure figcaption {
+	padding: 1.5em;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 1.25em;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+/*CLICK HERE BUTTON*/
+a.click-here {
+  color: #ec7904;
+  font-weight: 700;
+  font-size: 14px;
+  width: auto;
+  border: 2px solid #ec7904;
+  border-radius: 10px;
+  padding: 0.5rem 3rem;
+}
+a.click-here:hover {
+  background-color: #ec7904;
+  color: white; 
+}
+
+/*microsoft partner*/
+#microsoft-partner{
+  background: #EC7904;
+  padding: 3rem;
+}
+#microsoft-partner h4 {
+  font-size: 22px;
+  color: white;
+}
+#microsoft-partner p{
+  color: white;
+}
+
+/* testimonials css*/
+.slider-area{
+    background: transparent;
+    padding: 30px 0px;
+    position: relative;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    background: transparent;
+    filter: invert(1);
+}
+.img-area{
+    width: 250px;
+    height: 250px;
+    margin: 15px auto;
+    border: 4px solid #EC7904;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-area img{
+    width: 100%;
+}
+.carousel-caption{
+    position:static;
+    padding-bottom: 15px;
+    padding-top:0px;
+    color: black;
+}
+/*-- Microsoft Courses --*/
+
+.fa-star{
+    color: rgb(248, 189, 37);
+}
+#testimonials{
+  background-image: url(../img/table-bg.jpg);
+  background-size: contain;
+background-repeat: no-repeat;
+background-position: center top;
+}
+
+/* about us*/
+#hero-about {
+  background-image: url(../img/aboutus-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 160px 0px 60px 0px;
+  height:435px;
+}
+
+
+/* contact us*/
+#map { background:#f8f8f8; }
+
+#map iframe { 
+               width: 100%; 
+               height: 450px; 
+  }
+
+
+/*footer CSS*/
+#footer-social .fab{
+   	background-color: #f26c13;
+ 	border-radius: 40px;
+ 	color: #fff;
+ 	height: 40px;
+  	line-height: 40px;
+ 	margin: auto 3px;
+ 	width: 40px;
+ 	font-size: 20px;
+  	text-align: center;
+}
+
+#footer-social .fab:hover{
+ 	color: #000;
+   cursor: pointer;
+}
+#footer-contact li{
+ font-weight: 600;
+}
+
+.footer-clean {
+  padding: 50px 0;
+  background-color: rgb(248, 248, 248);
+  color: #4b4c4d;
+ 
+}
+#footer-contact .fas{
+color: #f26c13;
+}
+#footer-contact a:hover{
+color: #f26c13;
+}
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.footer-clean li { color: rgb(47, 54, 57); }
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  
+  color: rgb(47, 54, 57);
+  font-weight: 600;
+}
+
+.footer-clean ul a:hover {
+  opacity: 1;
+}
+
+.footer-clean .item.social {
+  text-align: right;
+}
+
+.footer-clean .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-clean .item.social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+#footer-p {
+  font-weight: 700;
+  color: rgb(143,143,143);
+}
+
+#footer-p i {
+  margin: 10px;
+  color: #000;
+}
+
+
+/*Contact Page CSS*/
+#hero-img-contact{
+    background-image: url(../img/contact-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 70% 90%;
+  color: #fff;
+  padding: 160px 0px 60px 0px;
+  height: 60vh;
+  position: relative;
+  font-weight: 700;
+}
+#contact-page-icons .fas{
+  color: #f26c13;
+  margin-right: 10px;
+}
+
+.contact-button { 
+  border-radius:50px; 
+  padding: 10px 45px; 
+  text-transform: uppercase; 
+  font-weight: 700;
+  border: 2px solid #f26c13;
+color: #f26c13;
+}
+
+.contact-button:hover {
+    color: #fff;
+    background: #f26c13; 
+    border: solid 2px #f7883e; 
+}
+.contact-clean {
+  background: #f1f7fc;
+  padding: 80px 0;
+}
+
+.contact-clean form {
+  max-width: 480px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+
+.contact-clean h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 36px;
+  color: inherit;
+}
+
+.contact-clean .form-group:last-child {
+  margin-bottom: 5px;
+}
+
+.contact-clean form .form-control {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+  outline: none;
+  color: inherit;
+  padding-left: 12px;
+  height: 42px;
+}
+
+.contact-clean form .form-control:focus {
+  border: 1px solid #b2b2b2;
+}
+
+.contact-clean form textarea.form-control {
+  min-height: 100px;
+  max-height: 260px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.contact-clean form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none !important;
+}
+
+.contact-clean form .btn:hover {
+  opacity: 1;
+}
+
+.contact-clean form .btn:active {
+  transform: translateY(1px);
+}
+
+.contact-clean form .btn-primary {
+  background-color: #055ada !important;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 .2rem rgba(242,108,19,0.58);
+  border-color: rgba(247, 136, 62, 1);
+}
+
+/*Manage Services Page*/
+#hero-img-services {
+  background-image: url(../img/conference-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 70% 90%;
+  color: #fff;
+  padding: 160px 0px 60px 0px;
+  height: 60vh;
+  position: relative;
+  font-weight: 700;
+}
+#manage-services {
+  margin: 5rem 0;
+}
+#manage-services h1 {
+  margin-bottom: 2rem;
+}
+
+#manage-services ul {
+  list-style-type: none;
+  padding: 0;
+}
+#manage-services i {
+  color: #ec7904;
+  padding: 0 5px;
+  line-height: 0.5rem;
+}
+.letter-space {
+  letter-spacing: -1px;
+  max-width: 400px;
+  margin-bottom: 4rem;
+}
+
+/*TRAINING PAGES*/
+#training-course{
+    background-image: url(/assets/img/training-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#training-course h2::after {display: none; }
+
+.card-title{
+  font-size: 20px;
+}
+#hero-img-microsoftcourses{
+   background-image: url(../img/microsoftcourses-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:435px;
+ 
+ 
+}
+/*IT AND PROJECT MANAGEMENT CSS*/
+#hero-img-managementcourses {
+  background: url("../img/project-management.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:435px;
+  position: relative;
+}
+
+/*CompTIA*/
+#hero-img-comptia {
+  background: url("../img/learning.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:435px;
+  position: relative;
+}
+
+/*CompTIA*/
+#cisco-hero {
+  background: url("../img/cisco-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:435px;
+  position: relative;
+}
+/*Database*/
+#database-hero {
+   background-image: url(../img/database-course.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:435px;
+ 
+ 
+}
+
+/*SOFT SKILLS CSS*/
+#hero-img-softskillscourses {
+  background: url("../img/softskills.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:435px;
+}
+@media (max-width:991px) {
+      /*footer*/
+  .footer-clean .item.social > a {
+    margin-top: 40px;
+  }
+    /*training pages*/
+    .flex-flow-column-reverse{
+    flex-flow: column-reverse;
+    display: flex;
+    }
+
+    .hide2 { display: none !important; }
+}
+
+@media (min-width: 992px) { 
+
+   .hide { display: none !important; }
+}
+
+@media (min-width: 576px) { 
+    /*testimonials*/
+  .card{
+  width: 30rem!important;
+}
+.carousel-caption p{
+   font-weight: 500;
+   padding:0px 60px;
+}
+#training-course .card {  width:auto !important; }
+}
+
+
+@media (min-width: 768px) { 
+  /*testimonials*/
+   .card {
+  width: 45rem!important;
+   }
+          /*footer*/
+  .footer-clean .item.social {
+    text-align: center;
+  }
+    /*navigation*/
+  .navigation-clean .navbar-nav .show .dropdown-menu {
+    box-shadow: 0 4px 8px rgba(0,0,0,.1);
+  }
+
+
+#training-course .card {  width:auto !important; }
+ 
+   
+}
+
+@media (max-width:767px) {
+  /*contact form*/
+  .contact-clean form {
+    padding: 30px;
+  }
+    .contact-clean {
+    padding: 20px 0;
+  }
+          /*footer*/
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .footer-clean .item.social > a {
+    margin-top: 10px;
+  }
+   .navigation-clean .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #37434d;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    line-height: 1;
+  }
+    .navigation-clean.navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #fff;
+  }
+  #training-course h2 { font-size: 38px; }
+  #hero-img-managementcourses { height: 300px; }
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+         #hero-img h1 { font-size:48px; }
+         .mobile-ffcr {
+                        flex-flow: column-reverse;
+                        display: flex;
+                        margin-bottom:20px;
+                      }
+ }
+
+
+
